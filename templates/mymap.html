@@ -1,1 +1,253 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_ebd733f58c6040e78190897b6306bfee {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_ebd733f58c6040e78190897b6306bfee" ></div>
+        
+</body>
+<script>    
+    
+            var map_ebd733f58c6040e78190897b6306bfee = L.map(
+                "map_ebd733f58c6040e78190897b6306bfee",
+                {
+                    center: [39.08637540349382, -94.57543307297588],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 13,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
 
+            
+
+        
+    
+            var tile_layer_92175b63778847289feed23697c144e0 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/dark_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_ebd733f58c6040e78190897b6306bfee);
+        
+    
+            var circle_marker_4c9aceda32ae463f93e000e54b2871bd = L.circleMarker(
+                [39.1016789192981, -94.5719172644535],
+                {"bubblingMouseEvents": true, "color": "#E37222", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E37222", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 3}
+            ).addTo(map_ebd733f58c6040e78190897b6306bfee);
+        
+    
+        var popup_e6f30665a67642e4a45770ba5f506809 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ec53a225fb29473f9a874f4eb3e76646 = $(`<div id="html_ec53a225fb29473f9a874f4eb3e76646" style="width: 100.0%; height: 100.0%;">10th and Harrison<br>Residents:50<br>Status:Open</div>`)[0];
+            popup_e6f30665a67642e4a45770ba5f506809.setContent(html_ec53a225fb29473f9a874f4eb3e76646);
+        
+
+        circle_marker_4c9aceda32ae463f93e000e54b2871bd.bindPopup(popup_e6f30665a67642e4a45770ba5f506809)
+        ;
+
+        
+    
+    
+            var circle_marker_5aff85edde174759a1405a6660b84e97 = L.circleMarker(
+                [38.9418121523143, -94.6073527937201],
+                {"bubblingMouseEvents": true, "color": "#E37222", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E37222", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.0, "stroke": true, "weight": 3}
+            ).addTo(map_ebd733f58c6040e78190897b6306bfee);
+        
+    
+        var popup_df16d25334094bdaaae3fa208ec9c82a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_30883ba184424f47b5b1235d33150f7e = $(`<div id="html_30883ba184424f47b5b1235d33150f7e" style="width: 100.0%; height: 100.0%;">103rd and St. Line<br>Residents:100<br>Status:Hostile</div>`)[0];
+            popup_df16d25334094bdaaae3fa208ec9c82a.setContent(html_30883ba184424f47b5b1235d33150f7e);
+        
+
+        circle_marker_5aff85edde174759a1405a6660b84e97.bindPopup(popup_df16d25334094bdaaae3fa208ec9c82a)
+        ;
+
+        
+    
+    
+            var circle_marker_c7b3230041d8484288f554ad238f7567 = L.circleMarker(
+                [39.1080131230211, -94.5650275812684],
+                {"bubblingMouseEvents": true, "color": "#E37222", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E37222", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.0, "stroke": true, "weight": 3}
+            ).addTo(map_ebd733f58c6040e78190897b6306bfee);
+        
+    
+        var popup_ea0776822b00497eb9d7857337d9d46d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_51b1e04853e040d08185fa4708f0b11e = $(`<div id="html_51b1e04853e040d08185fa4708f0b11e" style="width: 100.0%; height: 100.0%;">Belvidere Park<br>Residents:100<br>Status:Swept</div>`)[0];
+            popup_ea0776822b00497eb9d7857337d9d46d.setContent(html_51b1e04853e040d08185fa4708f0b11e);
+        
+
+        circle_marker_c7b3230041d8484288f554ad238f7567.bindPopup(popup_ea0776822b00497eb9d7857337d9d46d)
+        ;
+
+        
+    
+    
+            var circle_marker_a0650afe2cbd4cc48570267df297cb4b = L.circleMarker(
+                [39.0081689563422, -94.5459745039586],
+                {"bubblingMouseEvents": true, "color": "#0A8A9F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0A8A9F", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_ebd733f58c6040e78190897b6306bfee);
+        
+    
+        var popup_024b3d393b2d4003a9767222e51ba196 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_db71cd87d0ce4a34af190fb33af7ee30 = $(`<div id="html_db71cd87d0ce4a34af190fb33af7ee30" style="width: 100.0%; height: 100.0%;">Unity Southeast<br>Type:Warming Center<br>Beds:37.0<br>Accepting:Yes</div>`)[0];
+            popup_024b3d393b2d4003a9767222e51ba196.setContent(html_db71cd87d0ce4a34af190fb33af7ee30);
+        
+
+        circle_marker_a0650afe2cbd4cc48570267df297cb4b.bindPopup(popup_024b3d393b2d4003a9767222e51ba196)
+        ;
+
+        
+    
+    
+            var circle_marker_389c4ac837c740738533214cc4740626 = L.circleMarker(
+                [39.1023202765149, -94.5693413579195],
+                {"bubblingMouseEvents": true, "color": "#0A8A9F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0A8A9F", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_ebd733f58c6040e78190897b6306bfee);
+        
+    
+        var popup_c6219520f3f84c15bd5de83d9e52a20e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c55d21dec10a4866b9535947db32f07e = $(`<div id="html_c55d21dec10a4866b9535947db32f07e" style="width: 100.0%; height: 100.0%;">City Union Mission<br>Type:Men's Shelter<br>Beds:nan<br>Accepting:Yes</div>`)[0];
+            popup_c6219520f3f84c15bd5de83d9e52a20e.setContent(html_c55d21dec10a4866b9535947db32f07e);
+        
+
+        circle_marker_389c4ac837c740738533214cc4740626.bindPopup(popup_c6219520f3f84c15bd5de83d9e52a20e)
+        ;
+
+        
+    
+    
+            var circle_marker_e4b9d5682e63451a8c6582fa3a9feedd = L.circleMarker(
+                [39.1034582416922, -94.571247246275],
+                {"bubblingMouseEvents": true, "color": "#0A8A9F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0A8A9F", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_ebd733f58c6040e78190897b6306bfee);
+        
+    
+        var popup_a5aa6851ca3649518b88980ba295fadf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_adb34687b0b54414a49fd6ce8d11f5bc = $(`<div id="html_adb34687b0b54414a49fd6ce8d11f5bc" style="width: 100.0%; height: 100.0%;">Restart Inc<br>Type:Shelter<br>Beds:nan<br>Accepting:Yes</div>`)[0];
+            popup_a5aa6851ca3649518b88980ba295fadf.setContent(html_adb34687b0b54414a49fd6ce8d11f5bc);
+        
+
+        circle_marker_e4b9d5682e63451a8c6582fa3a9feedd.bindPopup(popup_a5aa6851ca3649518b88980ba295fadf)
+        ;
+
+        
+    
+    
+            var circle_marker_419885b6addf47d3a5c4335a982dadd5 = L.circleMarker(
+                [39.0845711585581, -94.5752976020976],
+                {"bubblingMouseEvents": true, "color": "#0A8A9F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0A8A9F", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_ebd733f58c6040e78190897b6306bfee);
+        
+    
+        var popup_bd17fe0c1d5c45a2a08e3d45c7a32500 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_05a5f07628f24c87b4256b0174122f6a = $(`<div id="html_05a5f07628f24c87b4256b0174122f6a" style="width: 100.0%; height: 100.0%;">University Health<br>Type:Hospital<br>Beds:238.0<br>Accepting:Yes</div>`)[0];
+            popup_bd17fe0c1d5c45a2a08e3d45c7a32500.setContent(html_05a5f07628f24c87b4256b0174122f6a);
+        
+
+        circle_marker_419885b6addf47d3a5c4335a982dadd5.bindPopup(popup_bd17fe0c1d5c45a2a08e3d45c7a32500)
+        ;
+
+        
+    
+    
+            var circle_marker_250f69be392d467385baa59fa26f6e92 = L.circleMarker(
+                [39.0991422701687, -94.5510114597684],
+                {"bubblingMouseEvents": true, "color": "#0A8A9F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0A8A9F", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_ebd733f58c6040e78190897b6306bfee);
+        
+    
+        var popup_1c5deb132b714dc3bbf52fa45dd60821 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1b032f00d3404323abf6b2ea8daca926 = $(`<div id="html_1b032f00d3404323abf6b2ea8daca926" style="width: 100.0%; height: 100.0%;">Rediscover<br>Type:Urgent Care<br>Beds:nan<br>Accepting:No</div>`)[0];
+            popup_1c5deb132b714dc3bbf52fa45dd60821.setContent(html_1b032f00d3404323abf6b2ea8daca926);
+        
+
+        circle_marker_250f69be392d467385baa59fa26f6e92.bindPopup(popup_1c5deb132b714dc3bbf52fa45dd60821)
+        ;
+
+        
+    
+    
+            var circle_marker_70e6d4bdb4414001a4fcae427cbd806d = L.circleMarker(
+                [39.1051568728759, -94.5660670535343],
+                {"bubblingMouseEvents": true, "color": "#0A8A9F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0A8A9F", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_ebd733f58c6040e78190897b6306bfee);
+        
+    
+        var popup_69d855736c0345dfa67ba7022eaa64fd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_59984035e89147e3afa0042fb2e1d022 = $(`<div id="html_59984035e89147e3afa0042fb2e1d022" style="width: 100.0%; height: 100.0%;">Hope Faith<br>Type:Shelter<br>Beds:nan<br>Accepting:Yes</div>`)[0];
+            popup_69d855736c0345dfa67ba7022eaa64fd.setContent(html_59984035e89147e3afa0042fb2e1d022);
+        
+
+        circle_marker_70e6d4bdb4414001a4fcae427cbd806d.bindPopup(popup_69d855736c0345dfa67ba7022eaa64fd)
+        ;
+
+        
+    
+    
+            var circle_marker_d7a1af04cc364ade8909a990112aeeeb = L.circleMarker(
+                [39.1115665222922, -94.5687410904525],
+                {"bubblingMouseEvents": true, "color": "#0A8A9F", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0A8A9F", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_ebd733f58c6040e78190897b6306bfee);
+        
+    
+        var popup_77de6cc1de75421fa3f70f2579e55a09 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1a9b8ceeb7c3430cbbffec1c9dee16c0 = $(`<div id="html_1a9b8ceeb7c3430cbbffec1c9dee16c0" style="width: 100.0%; height: 100.0%;">Garrison Center<br>Type:Warming Ceter<br>Beds:100.0<br>Accepting:No</div>`)[0];
+            popup_77de6cc1de75421fa3f70f2579e55a09.setContent(html_1a9b8ceeb7c3430cbbffec1c9dee16c0);
+        
+
+        circle_marker_d7a1af04cc364ade8909a990112aeeeb.bindPopup(popup_77de6cc1de75421fa3f70f2579e55a09)
+        ;
+
+        
+    
+</script>
